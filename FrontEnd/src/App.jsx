@@ -1,7 +1,14 @@
+import Hero from "./Components/Hero"
+import Footer from "./Components/Footer.jsx"
+import Navbar from "./Components/Header.jsx"
 
 const App = () => {
   return (
-    <div className='text-center text-xl py-4 text-white font-bold bg-black'>AI Code Reviewer</div>
+<>
+<Navbar />
+<Hero />
+<Footer />
+</>
   )
 }
 
