@@ -1,16 +1,17 @@
 import React from 'react'
+import { NavLink } from 'react-router'
 
 const Header = () => {
   return (
-    <div className='py-4 px-10 flex justify-between items-center'>
-        <h2 className='uppercase text-3xl font-bold text-yellow-300'>Codher</h2>
+    <nav className='fixed z-50 w-full py-4 px-10 flex justify-between items-center bg-[#00000039] backdrop-blur-2xl '>
+        <h2 className='text-3xl font-bold text-yellow-300'>OptiJS</h2>
         <ul className='flex gap-7 font-bold uppercase text-yellow-300'>
-            <li>Home</li>
-            <li>About</li>
-            <li>Try Now!</li>
-            <li>Contact</li>
+            <NavLink className={({isActive})=>`hover:scale-105 ease-in-out duration-200 hover:text-yellow-300 ${isActive ? "text-yellow" : "text-white"}`} to="/" >Home</NavLink>
+            <NavLink className={({isActive})=>`hover:scale-105 ease-in-out duration-200 hover:text-yellow-300 ${isActive ? "text-yellow" : "text-white"}`} to="/about" >About</NavLink>
+            <NavLink className={({isActive})=>`hover:scale-105 ease-in-out duration-200 hover:text-yellow-300 ${isActive ? "text-yellow" : "text-white"}`} to="/try-now" >Try Now!</NavLink>
+            <NavLink className={({isActive})=>`hover:scale-105 ease-in-out duration-200 hover:text-yellow-300 ${isActive ? "text-yellow" : "text-white"}`} to="/contact" >Contact</NavLink>
         </ul>
-    </div>
+    </nav>
   )
 }
 
