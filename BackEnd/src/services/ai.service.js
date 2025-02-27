@@ -52,9 +52,9 @@ const model = genAI.getGenerativeModel({
   
 });
 
-async function generateContent(prompt) {
+async function generateContent(code) {
   try {
-   const result = await model.generateContent(prompt);
+   const result = await model.generateContent(code);
    return result.response.text();
   } catch (error) {
    console.error("Fetch Error", error.message);
