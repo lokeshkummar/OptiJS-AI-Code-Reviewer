@@ -6,7 +6,7 @@ import { Link } from 'react-router'
 const Hero = () => {
     return (
         <div className='h-screen w-full flex justify-center items-center'>
-            <div className='absolute top-40 flex flex-col justify-center gap-5'>
+            <div className='absolute top-44 flex flex-col justify-center gap-5'>
                 <TrueFocus
 
                     sentence="JS Code Reviewer"

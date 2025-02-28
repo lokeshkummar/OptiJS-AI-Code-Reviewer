@@ -1,8 +1,10 @@
-import React from 'react'
+
 
 const Contact = () => {
   return (
-    <div className='h-screen w-full font-bold text-3xl text-white flex justify-center items-center'>Contact</div>
+    <div className='h-screen w-full font-bold text-lg text-white flex flex-col justify-center items-center'>
+      <span>Email Me: <a href="mailto:lokeshkumar.080806@gmail.com" className="hover:text-yellow-300 hover:underline">Here</a></span>
+    </div>
   )
 }
 
