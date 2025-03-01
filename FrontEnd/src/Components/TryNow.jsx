@@ -17,10 +17,15 @@ const TryNow = () => {
     const [review, setReview] = useState(``)
     const [isLoading, setisLoading] = useState(false)
 
+    const url = import.meta.env.VITE_BASE_URL
+    if (!url) {
+        console.log("base url env file not found!!");
+
+    }
     const reviewCode = async () => {
         setisLoading(true)
         try {
-            const response = await axios.post(`${import.meta.env.BASE_URL}/ai/get-res`, { code })
+            const response = await axios.post(`${url}/ai/get-res`, { code })
             setReview(response.data);
         }
         catch (error) {
@@ -31,6 +36,7 @@ const TryNow = () => {
                 console.error("Error status:", error.response.status);
                 console.error("Error headers:", error.response.headers);
             }
+
         }
         finally {
             setisLoading(false)

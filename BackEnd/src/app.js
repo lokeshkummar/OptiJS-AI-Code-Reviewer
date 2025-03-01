@@ -5,7 +5,7 @@ const cors = require('cors');
 
 const app = express()
 
-app.use(cors({origin: "https://optijs.vercel.app"}))
+app.use(cors())
 
 app.use(express.json())
 
