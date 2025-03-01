@@ -1,4 +1,3 @@
-import ReactDOM from "react-dom/client";
 import { BrowserRouter, Routes, Route } from "react-router";
 import { ClerkProvider } from "@clerk/clerk-react"
 import App from "./app";

@@ -1,4 +1,3 @@
-import React from 'react'
 import Threads from './Ui/Threads'
 import TrueFocus from "./Ui/TrueFocus"
 import { Link } from 'react-router'
