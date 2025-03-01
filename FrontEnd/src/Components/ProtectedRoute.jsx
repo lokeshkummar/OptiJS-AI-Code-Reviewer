@@ -1,6 +1,6 @@
 import { useAuth } from "@clerk/clerk-react";
 import { Navigate } from "react-router";
-import App from "../app";
+import App from "../App.jsx";
 
 export default function ProtectedRoute() {
   const { isSignedIn } = useAuth();
