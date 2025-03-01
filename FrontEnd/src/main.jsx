@@ -32,8 +32,10 @@ ReactDOM.createRoot(root).render(
         <Route path="/sign-up" element={<SignUpPage />} />
 
         {/* Protecting specific routes */}
-        <Route path="/try-now" element={<ProtectedRoute><TryNow /></ProtectedRoute>} />
-        <Route path="/contact" element={<ProtectedRoute><Contact /></ProtectedRoute>} />
+        <Route element={<ProtectedRoute />}>
+          <Route path="/try-now" element={<TryNow />} />
+          <Route path="/contact" element={<Contact />} />
+        </Route>
       </Routes>
     </BrowserRouter>
   </ClerkProvider>
