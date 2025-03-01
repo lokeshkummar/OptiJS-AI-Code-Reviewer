@@ -20,7 +20,7 @@ const TryNow = () => {
     const reviewCode = async () => {
         setisLoading(true)
         try {
-            const response = await axios.post('http://localhost:3000/ai/get-res', { code })
+            const response = await axios.post(`${import.meta.env.BASE_URL}/ai/get-res`, { code })
             setReview(response.data);
         }
         catch (error) {
