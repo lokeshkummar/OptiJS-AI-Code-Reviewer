@@ -1,7 +1,7 @@
 import { BrowserRouter, Routes, Route } from "react-router";
 import { ClerkProvider } from "@clerk/clerk-react"
-import App from "./App,jsx";
 import "./index.css"
+import App from "./App.jsx";
 import Hero from "./Components/Hero"
 import About from "./Components/About";
 import Contact from "./Components/Contact";
