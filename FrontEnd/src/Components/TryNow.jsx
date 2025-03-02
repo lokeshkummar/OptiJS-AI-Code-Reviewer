@@ -51,7 +51,7 @@ const TryNow = () => {
     return (
         <div className='h-screen w-full font-bold flex gap-7 p-10 '>
             <div className='my-10 h-full w-1/2 bg-neutral-800 rounded-2xl border-2 border-neutral-600 flex flex-col' >
-                <div className='h-[90%] w-full'>
+                <div className='h-[90%] w-full overflow-scroll'>
                     <Editor
                         value={code}
                         onValueChange={code => setCode(code)}
@@ -63,7 +63,7 @@ const TryNow = () => {
                         }}
                     />
                 </div>
-                <div className='h-[10%] bg-transparent rounded-full py-8 flex justify-end items-center px-3 m-2 '>
+                <div className='h-[10%] rounded-full py-8 flex justify-end items-center px-3 m-2 '>
                     <button onClick={reviewCode} disabled={isLoading} className={`cursor-pointer active:scale-95 hover:scale-105 text-lg ease-in-out duration-300 px-6 rounded-full py-2 bg-yellow-300 text-black font-bold ${isLoading ? "bg-yellow-200 animate-pulse text-md " : "bg-yellow-300"} `} >{isLoading ? "Reviewing..." : "Review"}</button>
                 </div>
             </div>

@@ -1,4 +1,3 @@
-require('dotenv').config();
 const express = require('express');
 const aiRoutes = require('../src/routes/ai.routes');
 const cors = require('cors');
@@ -9,6 +8,7 @@ app.use(cors())
 
 app.use(express.json())
 
+//routes
 app.use('/ai', aiRoutes)
 
 

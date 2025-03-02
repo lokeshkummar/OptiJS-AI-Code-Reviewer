@@ -1,3 +1,4 @@
+require("dotenv").config();
 const { GoogleGenerativeAI } = require("@google/generative-ai");
 
 const genAI = new GoogleGenerativeAI(process.env.GEMINI_API_KEY);
@@ -122,17 +123,15 @@ Additional Features to Improve Results
 ✅ Suggest alternative solutions (e.g., recursion vs loops, performance trade-offs).
 ✅ Explain concepts in detail when needed.
 ✅ Provide references to JavaScript documentation for further learning.
-✅ Identify anti-patterns and suggest better approaches.`
-  
+✅ Identify anti-patterns and suggest better approaches.`,
 });
 
 async function generateContent(code) {
   try {
-   const result = await model.generateContent(code);
-   return result.response.text();
+    const result = await model.generateContent(code);
+    return result.response.text();
   } catch (error) {
-   console.error("Fetch Error", error.message);
-   
+    console.error("Fetch Error", error.message);
   }
 }
 
