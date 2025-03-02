@@ -1,5 +1,7 @@
 const app = require('./src/app.js')
 
-app.listen(3000, ()=>{
-console.log("server is running perfectly.")
+const port  = process.env.PORT;
+
+app.listen(port, ()=>{
+console.log(`server is running perfectly on port:${port}`);
 })
