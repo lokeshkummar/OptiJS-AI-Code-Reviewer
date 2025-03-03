@@ -5,7 +5,7 @@ import { Link } from 'react-router'
 const Hero = () => {
     return (
         <div className='h-screen w-full flex justify-center items-center'>
-            <div className='absolute top-44 flex flex-col justify-center gap-5'>
+            <div className='absolute top-60 md:top-44 flex flex-col justify-center gap-5'>
                 <TrueFocus
 
                     sentence="JS Code Reviewer"
@@ -21,10 +21,10 @@ const Hero = () => {
                     pauseBetweenAnimations={1}
 
                 />
-                <div className='z-10 flex flex-col gap-7 justify-center'>
-                    <p className='px-[30%] text-center font-bold text-neutral-500'><q> Boost your JavaScript code quality with AI! 🚀 Get instant feedback, best practices, and smart suggestions to write cleaner, optimized code effortlessly.💡✨ </q></p>
+                <div className='z-10 flex flex-col gap-10 md:gap-7 justify-center'>
+                    <p className='px-5 md:px-[30%] text-center font-bold text-neutral-500'><q> Boost your JavaScript code quality with AI! 🚀 Get instant feedback, best practices, and smart suggestions to write cleaner, optimized code effortlessly.💡✨ </q></p>
                     <button >
-                        <Link to="/try-now" className='text-neutral-400 font-bold px-6 shadow-2xl shadow-white rounded-full hover:bg-neutral-600 hover:text-white ease-in-out duration-300 py-3 border border-neutral-500'>Try it Now 🚀</Link>
+                        <Link to="/try-now" className='text-neutral-400 font-bold px-7 md:px-6 shadow-2xl shadow-white rounded-full hover:bg-neutral-600 hover:text-white ease-in-out duration-300 py-4 md:py-3 border-2 border-neutral-700'>Try it Now 🚀</Link>
                     </button>
                 </div>
             </div>

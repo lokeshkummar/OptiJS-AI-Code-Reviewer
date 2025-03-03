@@ -49,8 +49,8 @@ const TryNow = () => {
     }, [])
 
     return (
-        <div className='h-screen w-full font-bold flex gap-7 p-10 '>
-            <div className='my-10 h-full w-1/2 bg-neutral-800 rounded-2xl border-2 border-neutral-600 flex flex-col' >
+        <div className='h-screen w-full font-bold flex gap-7 p-10 md:flex-row flex-col '>
+            <div className='md:my-10 mt-16 h-full md:w-1/2 bg-neutral-800 rounded-2xl border-2 border-neutral-600 flex flex-col' >
                 <div className='h-[90%] w-full overflow-scroll'>
                     <Editor
                         value={code}
@@ -67,7 +67,7 @@ const TryNow = () => {
                     <button onClick={reviewCode} disabled={isLoading} className={`cursor-pointer active:scale-95 hover:scale-105 text-lg ease-in-out duration-300 px-6 rounded-full py-2 bg-yellow-300 text-black font-bold ${isLoading ? "bg-yellow-200 animate-pulse text-md " : "bg-yellow-300"} `} >{isLoading ? "Reviewing..." : "Review"}</button>
                 </div>
             </div>
-            <div className='overflow-scroll scroll-smooth font-normal my-10 h-full w-1/2 bg-neutral-800 py-5 px-7 leading-loose rounded-2xl border-2 border-neutral-600' >
+            <div className='overflow-scroll scroll-smooth font-normal md:my-10 h-full md:w-1/2 bg-neutral-800 py-3 px-3 md:py-5 md:px-7 leading-loose rounded-2xl border-2 border-neutral-600' >
                 {
                     isLoading ? (<LazyLoading />) : (<Markdown
                         rehypePlugins={[rehypeHighlight]}
