@@ -45,7 +45,7 @@ const Header = () => {
               <HiOutlineXCircle className='absolute right-5 mt-5 text-6xl active:scale-75 ease-linear duration-200' onClick={togglePopover} />
               <div className='h-full uppercase w-full flex flex-col gap-7 justify-center items-center text-2xl font-bold'>
                 <NavLink to="/" className={({ isActive }) => ` ${isActive ? "text-white" : "text-neutral-400"}`}>Home</NavLink>
-                <NavLink to="/try-now" className={({ isActive }) => ` ${isActive ? "text-white" : "text-neutral-400"}`}>Try it Now</NavLink>
+                <NavLink to="/try-now" className={({ isActive }) => ` ${isActive ? "text-white" : "text-neutral-400"}`}>Try it Now 🚀</NavLink>
                 <NavLink to="/contact" className={({ isActive }) => ` ${isActive ? "text-white" : "text-neutral-400"}`}>Contact Me</NavLink>
               </div>
             </motion.div>
