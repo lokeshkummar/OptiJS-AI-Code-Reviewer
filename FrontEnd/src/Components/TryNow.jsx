@@ -49,7 +49,7 @@ const TryNow = () => {
     }, [])
 
     return (
-        <div className='h-screen w-full font-bold flex gap-7 p-10 md:flex-row flex-col '>
+        <div className='h-screen w-full font-bold flex gap-7 px-2 pt-8 md:p-10 md:flex-row flex-col '>
             <div className='md:my-10 mt-16 h-full md:w-1/2 bg-neutral-800 rounded-2xl border-2 border-neutral-600 flex flex-col' >
                 <div className='h-[90%] w-full overflow-scroll'>
                     <Editor
@@ -59,8 +59,8 @@ const TryNow = () => {
                         padding={25}
                         style={{
                             fontFamily: '"Fira code", "Fira Mono", monospace',
-                            fontSize: 20,
                         }}
+                        className='h-full text-xl md:border-none border-b-2 border-neutral-600'
                     />
                 </div>
                 <div className='h-[10%] rounded-full py-8 flex justify-end items-center px-3 m-2 '>
@@ -68,6 +68,7 @@ const TryNow = () => {
                 </div>
             </div>
             <div className='overflow-scroll scroll-smooth font-normal md:my-10 h-full md:w-1/2 bg-neutral-800 py-3 px-3 md:py-5 md:px-7 leading-loose rounded-2xl border-2 border-neutral-600' >
+                <p className='md:hidden text-center font-bold text-neutral-600'>AI Review Here</p>
                 {
                     isLoading ? (<LazyLoading />) : (<Markdown
                         rehypePlugins={[rehypeHighlight]}
