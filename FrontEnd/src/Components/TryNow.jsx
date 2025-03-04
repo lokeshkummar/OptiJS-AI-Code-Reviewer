@@ -67,8 +67,8 @@ const TryNow = () => {
                     <button onClick={reviewCode} disabled={isLoading} className={`cursor-pointer active:scale-95 hover:scale-105 text-lg ease-in-out duration-300 px-6 rounded-full py-2 bg-yellow-300 text-black font-bold ${isLoading ? "bg-yellow-200 animate-pulse text-md " : "bg-yellow-300"} `} >{isLoading ? "Reviewing..." : "Review"}</button>
                 </div>
             </div>
-            <div className='overflow-scroll scroll-smooth font-normal md:my-10 h-full md:w-1/2 bg-neutral-800 py-3 px-3 md:py-5 md:px-7 leading-loose rounded-2xl border-2 border-neutral-600' >
-                <p className='md:hidden text-center font-bold text-neutral-600'>AI Review Here</p>
+            <div className='overflow-scroll scroll-smooth font-normal md:my-10 h-screen md:h-full md:w-1/2 bg-neutral-800 py-3 px-5 md:py-5 md:px-7 leading-loose rounded-2xl border-2 border-neutral-600' >
+                <p className='md:hidden text-center font-bold text-neutral-600 pb-2'>OptiJS Review Here</p>
                 {
                     isLoading ? (<LazyLoading />) : (<Markdown
                         rehypePlugins={[rehypeHighlight]}
