@@ -22,7 +22,7 @@ const Hero = () => {
 
                 />
                 <div className='z-10 flex flex-col gap-10 md:gap-7 justify-center'>
-                    <p className='px-5 md:px-[30%] text-center font-bold text-neutral-500'><q> Boost your JavaScript code quality with AI! 🚀 Get instant feedback, best practices, and smart suggestions to write cleaner, optimized code effortlessly.💡✨ </q></p>
+                    <p className='px-5 md:px-[30%] text-center font-bold text-neutral-500'><q>OptiJS - AI powered code reviewer. Get instant feedback, best practices, and smart suggestions to write cleaner, optimized code effortlessly.💡✨ </q></p>
                     <button >
                         <Link to="/try-now" className='text-neutral-400 font-bold px-7 md:px-6 shadow-2xl shadow-white rounded-full hover:bg-neutral-600 hover:text-white ease-in-out duration-300 py-4 md:py-3 border-2 border-neutral-700'>Try it Now 🚀</Link>
                     </button>

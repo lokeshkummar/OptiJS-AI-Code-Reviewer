@@ -5,5 +5,5 @@ import App from "../App.jsx";
 export default function ProtectedRoute() {
   const { isSignedIn } = useAuth();
 
-  return isSignedIn ? <App /> : <Navigate to="/sign-in" replace />;
+  return isSignedIn ? <App /> : <Navigate to="/sign-up" replace />;
 }
